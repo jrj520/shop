@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="Content/css/ionic.css">
+    <link rel="stylesheet" href="Content/css/style.css">
+</head>
+<body ng-app="myApp" ng-controller="MyCtrl">
+    <div class="bar bar-header bar-stable">
+        <h1 class="title">购物车</h1>
+    </div>
+    <ion-scroll>
+    <div class="content has-header ionic-pseudo">
+        <div class="list">
+            <a class="item item-thumbnail-left" href="#">
+                <img src="">
+                <h2>Weezer</h2>
+                <p>Blue Album</p>
+            </a>
+            <a class="item item-thumbnail-left" href="#">
+                <img src="">
+                <h2>Smashing Pumpkins</h2>
+                <p>Siamese Dream</p>
+            </a>
+            <a class="item item-thumbnail-left" href="#">
+                <img src="">
+                <h2>Nirvana</h2>
+                <p>Nevermind</p>
+            </a>
+            <a class="item item-thumbnail-left" href="#">
+                <img src="">
+                <h2>Beastie Boys</h2>
+                <p>License To Ill</p>
+            </a>
+            <a class="item item-thumbnail-left" href="#">
+                <img src="">
+                <h2>Green Day</h2>
+                <p>Dookie</p>
+            </a>
+            <a class="item item-thumbnail-left" href="#">
+                <img src="">
+                <h2>Green Day</h2>
+                <p>Dookie</p>
+            </a>
+        </div>
+    </div>
+    </ion-scroll>
+    <div class="bar bar-footer all">
+        <span>
+            <input type="checkbox"> 全选
+        </span>
+        <span class="cen">
+            <small>不含运费</small> 合计：<b>￥<i>1565</i></b>
+        </span>
+        <b>结算(3)</b>
+    </div>
+    <div class="bar bar-footer bar-balanced">
+        <div class="title">Footer</div>
+    </div>
+</body>
+    <script src="Script/angular.min.js"></script>
+    <script src="Script/ionic.bundle.min.js"></script>
+    <script>
+        angular.module('myApp', ['ionic'])
+                .controller('MyCtrl', function($scope) {
+                });
+    </script>
+</html>

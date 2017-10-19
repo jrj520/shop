@@ -1,0 +1,28 @@
+body,html{
+    width: 100%;
+    height: 100%;
+}
+.all{
+    bottom: 45px;
+    background: #fff;
+    line-height: 3;
+}
+.cen{
+    position: absolute;
+    right: 110px;
+}
+.cen small{
+    color: #9E9E9E;
+}
+.cen b{
+    color: #FF8800;
+}
+.all>b{
+    position: absolute;
+    right: 0;
+    width: 100px;
+    height: 100%;
+    background: #FF7E02;
+    text-align: center;
+    color: #fff;
+}
